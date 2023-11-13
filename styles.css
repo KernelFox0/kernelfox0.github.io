@@ -1,0 +1,27 @@
+body {
+	font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+	background-color: #FAEBD7;
+}
+#title {
+	text-align: center;
+	background-color: #FAEBD7;
+	border: 3px solid #000000;
+	line-height: 0.5;
+}
+#mainContent {
+	margin-top: 5px;
+	border: 3px solid #000000;
+	background-image: linear-gradient(#00FFFF, #0437E2);
+	padding: 10px;
+}
+#mainContent h4 {
+	font-size: 22px;
+	line-height: 0.5;
+}
+#mainContent p {
+	font-size: 18px;
+}
+#mainContent a {
+	text-decoration: none;
+	
+}
