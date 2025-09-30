@@ -1,0 +1,82 @@
+.header {
+    height: 20dvh;
+}
+main {
+    height: 92dvh;
+    overflow: scroll;
+}
+
+.grid {
+    display: grid;
+    transition: all ease-in-out 0.5s;
+    grid-template-columns: 0fr 3fr;
+    gap: 20px;
+}
+#menuToggle:checked ~ .grid {
+    grid-template-columns: 0.5fr 2.5fr;
+}
+
+aside {
+    transition: all ease-in-out 0.5s;
+    width: 0.5fr;
+    padding-left: 10px;
+    overflow: hidden;
+    max-height: 80dvh;
+    position: relative;
+    & nav {
+        transition: all ease-in-out 0.4s;
+        overflow: hidden;
+        width: 0%;
+    }
+}
+
+
+#menuToggle:checked ~ .grid aside {
+    overflow: scroll;
+    & nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 0fr 1fr;
+    }
+    #menuToggle:checked ~ .grid {
+        grid-template-columns: 0.5fr 1fr;
+    }
+    aside {
+        width: 0.5fr;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        width: 100%;
+        height: 100%;
+        z-index: 100 !important;
+        position: fixed;
+        padding-right: 10px;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        & nav {
+            width: 100%;
+        }
+    }
+    .dark aside {
+        background-image: linear-gradient(135deg, #232526 0%, #0c0c0c 100%);
+    }
+    #menuToggle:checked ~ .grid aside {
+        height: 0%;
+        & nav {
+            width: 0%;
+        }
+    }
+    .grid {
+        display: inline;
+    }
+    main {
+        padding: 0 10px;
+        height: 88dvh;
+    }
+}
