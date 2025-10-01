@@ -4,6 +4,7 @@
 main {
     height: 92dvh;
     overflow: scroll;
+    padding-left: 2em;
 }
 
 .grid {
