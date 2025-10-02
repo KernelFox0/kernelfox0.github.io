@@ -170,10 +170,11 @@ nav .separator {
     margin-right: 11px;
     content: "";
     cursor: pointer;
+    transition: all ease-in-out 0.2s;
 }
 
 .collapsable input:checked + label::before {
-    background-image: url('../Images/Site/chevron-up.png');
+    transform: scaleY(-1);
 }
 
 .dark .collapsable label::before {
