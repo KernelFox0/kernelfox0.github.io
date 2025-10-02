@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="../CSS/fontLoader.css">
         <link rel="stylesheet" href="../CSS/responsive.css">
         <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/Pages/artrepoStyle.css">
         <script src="../Scripts/darkMode.js"></script>
+        <script src="../Scripts/Pages/artDisplayController.js"></script>
         <title>Kernel's Website - Art Archive</title>
     </head>
     <body>
@@ -64,6 +66,18 @@
                 </aside>
             <main>
                 <h1>UNDER DEVELOPMENT</h1>
+                <h5>Filters</h5>
+                <div class="filters">
+                    <input type="checkbox" name="byMe" id="byMe" hidden checked class="checkbox">
+                    <label for="byMe">Made by me</label>
+                    <input type="checkbox" name="byOthers" id="byOthers" hidden checked class="checkbox">
+                    <label for="byOthers">Made by Others</label>
+                    <input type="checkbox" name="containsMe" id="containsMe" hidden checked class="checkbox">
+                    <label for="containsMe">Contains Kernel</label>
+                    <input type="checkbox" name="containsOthers" id="containsOthers" hidden checked class="checkbox">
+                    <label for="containsOthers">Contains Others</label>
+                </div>
+                <div class="separator"></div>
             </main>
         </div>
     </body>
